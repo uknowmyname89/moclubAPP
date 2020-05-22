@@ -1,0 +1,70 @@
+select,
+input,
+textarea, .inputlike{
+  font-family: 'avantgard',Helvetica Neue,Arial,sans-serif;
+  background: transparent;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  outline: none;
+  font-size: $txt_14px;
+  text-align: left;
+  min-width: 1rem;
+  line-height: 1rem!important;
+  @extend %bpadding;
+  &.white {
+    border-color: #fff;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+.w-100 {
+  select,
+  input,
+  textarea, .inputlike{
+    width: 100%;
+  }
+}
+
+.inputlike {
+  input {
+    border: 0;
+    padding: 0;
+    min-height: 0;
+    line-height: 1rem;
+  }
+}
+
+.select_wrapper {
+  position: relative;
+  select {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  &:after {
+    font-family: icomoon;
+    content: "\e903";
+    position: absolute;
+    right: 0.8rem;
+    pointer-events: none;
+    font-size: 5.5px;
+    top: 50%;
+    margin-top: 2px;
+    line-height: 0;
+    color: $c-black;
+  }
+}
+
+.noborder{
+  border: 0px;
+}
+.nopadding{
+  padding-left: 0px;
+  padding-right: 0px;
+}

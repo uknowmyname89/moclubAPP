@@ -1,0 +1,46 @@
+.btn {
+  @extend %bpadding;
+  overflow: hidden;
+  text-decoration: none!important;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1rem!important;
+  background: transparent;
+  font-size: $txt_14px;
+  border: 1px solid $c-black;
+  border-radius: 0px;
+  color: $c-black;
+  outline: none;
+  text-align: center;
+  box-shadow: none!important;
+  &:hover, &:active {
+    background: $c-orange;
+    color: $c-black;
+  }
+  &.white {
+    border-color: #fff;
+    color: #fff!important;
+    &:hover, &:active {
+      background: $c-orange;
+      color: #fff;
+    }
+  }
+  &.orange {
+    border-color: $c-orange;
+    color: $c-orange!important;
+    &:hover, &:active {
+      background: $c-orange;
+      color: #fff!important;
+    }
+  }
+}
+
+button{
+  outline: none!important;
+}
+
+
+@media(max-width:768px) {
+  .btn {
+  }
+}

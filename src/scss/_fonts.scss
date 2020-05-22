@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'avantgard';
+  src: url('#{$path-fonts}/avantgardegothicc.eot');
+  src: local('avantgardegothicc'), local('avantgardegothicc'),
+  url('#{$path-fonts}/avantgardegothicc.eot?#iefix') format('embedded-opentype'),
+  url('#{$path-fonts}/avantgardegothicc.woff') format('woff'),
+  url('#{$path-fonts}/avantgardegothicc.woff2') format('woff2'),
+  url('#{$path-fonts}/avantgardegothicc.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'avantgard';
+  src: url('#{$path-fonts}/avantgardegothiccbold.eot');
+  src: local('avantgardegothiccbold'), local('avantgardegothiccbold'),
+  url('#{$path-fonts}/avantgardegothiccbold.eot?#iefix') format('embedded-opentype'),
+  url('#{$path-fonts}/avantgardegothiccbold.woff') format('woff'),
+  url('#{$path-fonts}/avantgardegothiccbold.woff2') format('woff2'),
+  url('#{$path-fonts}/avantgardegothiccbold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$path-fonts}/icomoon.eot');
+  src:  url('#{$path-fonts}/icomoon.eot#iefix') format('embedded-opentype'),
+  url('#{$path-fonts}/icomoon.ttf') format('truetype'),
+  url('#{$path-fonts}/icomoon.woff') format('woff'),
+  url('#{$path-fonts}/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

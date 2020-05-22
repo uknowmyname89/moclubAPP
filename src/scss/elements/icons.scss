@@ -1,0 +1,22 @@
+$icons: (
+  ('menu' '\e900' 1rem)
+  ('arrow_d' '\e901' 1rem)
+  ('cross' '\e902' 1rem)
+  ('map' '\e904' 1rem)
+  ('star' '\e903' 1rem)
+);
+
+.icon {
+  font-size: 1rem;
+  font-style: normal;
+
+  @each $icon in $icons {
+    &_#{nth($icon, 1)} {
+      font-family: 'icomoon';
+      font-size: nth($icon, 3);
+      &:before{
+        content: nth($icon, 2); 
+      }
+    }
+  }
+}

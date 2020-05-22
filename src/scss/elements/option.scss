@@ -1,0 +1,47 @@
+.option-wrapper {
+  .option{
+    position: fixed;
+    width: 100%;
+    top: $header-h;
+    height: $option-h;
+    color: #000!important;
+    text-decoration: none;
+    font-size: $txt_18px;
+    align-items: center;
+    z-index: 2;
+    &__pic{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  @media(min-width:576px) {
+    .row{
+      align-items: center;
+    }
+  }
+  &__drop {
+    max-height: 0;
+    position: fixed;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    top: calc( #{$header-h} + #{$option-h} );
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.5s;
+    &__holder{
+      width: auto;
+      padding: 2rem 1rem;
+    }
+  }
+  &.active {
+    .option{
+      background: darken($c-orange, 10);
+    }
+    .option-wrapper__drop {
+      max-height: 40vh;
+      overflow: auto;
+    }
+  }
+}

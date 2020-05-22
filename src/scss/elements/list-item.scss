@@ -1,0 +1,21 @@
+.list-item {
+  position: relative;
+  &__pic{
+    height: 100%;
+    width: 100%;
+  }
+  @media(min-width:576px) {
+    padding-left: 35%;
+    margin-left: 1rem;
+    .col {
+      position: static;
+    }
+    &__pic{
+      position: absolute;
+      width: 35%;
+      left: -1rem;
+      top: 0;
+      object-fit: cover;
+    }
+  }
+}

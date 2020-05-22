@@ -1,0 +1,60 @@
+.wrapper {
+  .header {
+    height: $header-h;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DADADA;
+    background: #fff;
+    z-index: 1;
+    .navbar-toggler{
+      display: flex;
+      padding: 0;
+      border: 0;
+      &-icon {
+        font-family: 'icomoon';
+        font-size: 0.84rem;
+        &:before{
+          content: '\e900';
+        }
+      }
+    }
+    &__logo{
+      width: 178px;
+    }
+  }
+  .main {
+    padding-top: $header-h;
+    &__holder {
+      padding: 3rem 1rem;
+    }
+  }
+  .sidenav {
+    height: calc( 100vh - #{$header-h} );
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: $header-h;
+    left: 0;
+    background-color: $c-orange;
+    color: #000;
+    overflow: hidden;
+    padding: 3rem 0;
+    transition: 0.5s;
+    a {
+      color: #000;
+    }
+    hr {
+      border-color: #000;
+    }
+    &__holder{
+      width: 100vw;
+      padding: 0 1rem;
+    }
+    &.active {
+      width: 100%;
+      overflow: auto;
+    }
+  }
+}
+
+

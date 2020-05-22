@@ -1,0 +1,24 @@
+.r-modal {
+  height: calc( 100vh - #{$header-h} );
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: $header-h;
+  right: 0;
+  background-color: #F4F4F4;
+  color: #000;
+  overflow: hidden;
+  padding: 3rem 0;
+  transition: 0.5s;
+  a {
+    color: #000;
+  }
+  &__holder{
+    width: 100vw;
+    padding: 0 1rem;
+  }
+  &.active {
+    width: 100%;
+    overflow: auto;
+  }
+}
